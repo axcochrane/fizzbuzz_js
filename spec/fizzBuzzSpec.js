@@ -4,11 +4,11 @@ describe('Fizzbuzz',function() {
 
     describe('knows when a number is',function() {
     
-    beforeEach(function(){
+       beforeEach(function(){
 
-        fizzbuzz = new Fizzbuzz();
+           fizzbuzz = new Fizzbuzz();
 
-    });
+       });
 
        it('divisible by 3', function() {
 
@@ -31,6 +31,22 @@ describe('Fizzbuzz',function() {
        it('NOT divisible by 5',function(){
 
            expect(fizzbuzz.isDivisibleByFive(17)).toBe(false);
+
+       });
+
+    });
+
+    describe('plays fizzbuzz',function() {
+    
+       beforeEach(function(){
+
+           fizzbuzz = new Fizzbuzz();
+
+       });
+
+       it('fizz on multiples of 3', function() {
+
+           expect(fizzbuzz.play(9)).toBe('Fizz'); 
 
        });
 
