@@ -21,6 +21,7 @@ Fizzbuzz = function() {
     };
     
     this.play = function(num) {
+        if (this.isDivisibleByThree(num) && this.isDivisibleByFive(num)) return 'FizzBuzz'
         if (this.isDivisibleByThree(num)) return 'Fizz'
         if (this.isDivisibleByFive(num)) return 'Buzz'
         else return num
