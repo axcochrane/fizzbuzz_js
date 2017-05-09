@@ -1,4 +1,4 @@
-Fizzbuzz = function(){
+Fizzbuzz = function() {
 
     this.isDivisibleByThree = function(num) {
 
@@ -16,8 +16,14 @@ Fizzbuzz = function(){
 
         if (num % arg === 0) return true
         else return false
+        
 
     };
     
+    this.play = function(num) {
+        if (this.isDivisibleByThree(num)) return 'Fizz'
+        else return num
+        
+    };
 
 };

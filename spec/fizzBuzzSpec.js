@@ -50,6 +50,12 @@ describe('Fizzbuzz',function() {
 
        });
 
+       it('buzz on multiples of 5', function(){
+
+            expect(fizzbuzz.play(20)).toBe('Buzz');
+           
+       });
+
     });
 
 });
