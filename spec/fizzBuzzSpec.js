@@ -56,6 +56,12 @@ describe('Fizzbuzz',function() {
            
        });
 
+       it('fizzbuzz on multiples of 3 and 5', function(){
+
+            expect(fizzbuzz.play(15)).toBe('FizzBuzz');
+           
+       });
+
     });
 
 });
