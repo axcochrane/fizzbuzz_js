@@ -25,6 +25,13 @@ describe('Fizzbuzz',function() {
        
        });
 
+       it('NOT divisible by 5',function(){
+
+           fizzbuzz = new Fizzbuzz();
+           expect(fizzbuzz.isDivisibleByFive(17)).toBe(false);
+
+       });
+
     });
 
 });

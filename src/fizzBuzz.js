@@ -1,6 +1,7 @@
 Fizzbuzz = function(){
     this.isDivisibleByThree = function(num) {
-        return true
+        if (num % 3 === 0) return true
+        else return false
     };
 
     this.isDivisibleByFive = function(num) {
